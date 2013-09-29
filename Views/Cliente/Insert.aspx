@@ -1,4 +1,4 @@
-<%@ Page Title="ClienteInsert" Language="C#" MasterPageFile="~/Site.Master" CodeBehind="Insert.aspx.cs" Inherits="TrabalhoBernardi.ClienteActions.Insert" %>
+<%@ Page Title="Cadastrar Cliente" Language="C#" MasterPageFile="~/Site.Master" CodeBehind="Insert.aspx.cs" Inherits="TrabalhoBernardi.ClienteActions.Insert" %>
 
 <asp:Content runat="server" ID="Content1" ContentPlaceHolderID="HeadContent">
 </asp:Content>

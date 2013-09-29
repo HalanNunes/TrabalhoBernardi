@@ -1,4 +1,4 @@
-<%@ Page Title="ClienteDelete" Language="C#" MasterPageFile="~/Site.Master" CodeBehind="Delete.aspx.cs" Inherits="TrabalhoBernardi.ClienteActions.Delete" %>
+<%@ Page Title="Excluir Cliente" Language="C#" MasterPageFile="~/Site.Master" CodeBehind="Delete.aspx.cs" Inherits="TrabalhoBernardi.ClienteActions.Delete" %>
 
 <asp:Content runat="server" ID="Content1" ContentPlaceHolderID="HeadContent">
 </asp:Content>

@@ -1,4 +1,4 @@
-<%@ Page Title="ClienteList" Language="C#" MasterPageFile="~/Site.Master" CodeBehind="Default.aspx.cs" Inherits="TrabalhoBernardi.ClienteActions.Default" ViewStateMode="Disabled" %>
+<%@ Page Title="Projeto - Halan, Thiago e Gustavo" Language="C#" MasterPageFile="~/Site.Master" CodeBehind="Default.aspx.cs" Inherits="TrabalhoBernardi.ClienteActions.Default" ViewStateMode="Disabled" %>
 
 <asp:Content runat="server" ID="Content1" ContentPlaceHolderID="HeadContent">
 </asp:Content>
