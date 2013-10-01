@@ -150,11 +150,18 @@ footer {
 }
 
     #login a {
-        background-color: #d3dce0;
+        background-color: #EEE;
         margin-left: 10px;
         margin-right: 3px;
         padding: 2px 3px;
         text-decoration: none;
+        border-radius:5px;
+    }
+
+    #login a:hover {
+        border-bottom-color:red;
+        border-bottom-style:solid;
+        border-bottom-width:5px;
     }
 
     #login a.username {
@@ -326,7 +333,6 @@ aside {
 
 /* login page */
 #loginForm {
-    border-right: solid 2px #c8c8c8;
     float: left;
     width: 55%;
 }

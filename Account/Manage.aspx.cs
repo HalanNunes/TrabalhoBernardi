@@ -39,7 +39,7 @@ namespace TrabalhoBernardi.Account
                     Form.Action = ResolveUrl("~/Account/Manage");
 
                     SuccessMessage =
-                        message == "ChangePwdSuccess" ? "Your password has been changed."
+                        message == "ChangePwdSuccess" ? "Sua senha foi mudada."
                         : message == "SetPwdSuccess" ? "Your password has been set."
                         : message == "RemoveLoginSuccess" ? "The external login was removed."
                         : String.Empty;

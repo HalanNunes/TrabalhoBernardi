@@ -12,11 +12,34 @@
 <body>
     <form runat="server">
     <header>
+        <div class="content-wrapper">
+            <div class="float-right">
+                <section id="login">
+                    <asp:LoginView ID="LoginView1" runat="server" ViewStateMode="Disabled">
+                        <LoggedInTemplate>
+                            <p style="color:white;">
+                                Olá, <a id="A4" runat="server" class="username" href="~/Account/Manage" title="Altere seus dados" style="color:white;">
+                                    <asp:LoginName ID="LoginName1" runat="server" CssClass="username" /></a>!
+                                <asp:LoginStatus ID="LoginStatus1" runat="server" LogoutAction="Redirect" LogoutText="Sair" LogoutPageUrl="~/" />
+                            </p>
+                        </LoggedInTemplate>
+                    </asp:LoginView>
+                </section>
+            </div>
+        </div>
     </header>
     <nav id="menu">
         <ul>
-            <li><a id="A1" runat="server" href="~/Views/Cliente/Insert">Cadastro</a></li>
-            <li><a id="A2" runat="server" href="~/Views/Cliente/Default">Consulta</a></li>
+            <asp:LoginView ID="LoginView2" runat="server" ViewStateMode="Disabled">
+                <AnonymousTemplate>
+                    <li><a id="A1" runat="server" href="~/Account/Register">Novo usuário</a></li>
+                    <li><a id="A2" runat="server" href="~/Account/Login">Login</a></li>
+                </AnonymousTemplate>
+                <LoggedInTemplate>
+                    <li><a id="A3" runat="server" href="~/Views/Cliente/Insert">Cadastro</a></li>
+                    <li><a id="A5" runat="server" href="~/Views/Cliente/Default">Consulta</a></li>
+                </LoggedInTemplate>
+            </asp:LoginView>
         </ul>
     </nav>
     <div id="body">
