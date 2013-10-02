@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Web;
 using System.Web.Optimization;
@@ -17,6 +18,7 @@ namespace TrabalhoBernardi
             BundleConfig.RegisterBundles(BundleTable.Bundles);
             AuthConfig.RegisterOpenAuth();
             RouteConfig.RegisterRoutes(RouteTable.Routes);
+            Database.SetInitializer<Models.TrabalhoBernardiContext>(new DropCreateDatabaseIfModelChanges<Models.TrabalhoBernardiContext>());
         }
 
         void Application_End(object sender, EventArgs e)
